@@ -1,0 +1,19 @@
+
+Tenserflow GPU installation on Windows 11
+1.GPU Drivers update
+2.Anaconda installation
+ 2.1 = Visit  official anaconda install
+ 2.2 conda create -n py310 python=3.10
+ 2.3 conda activate py310
+ 2.4 conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
+ 2.5 python -m pip install "tensorflow==2.10"
+ 
+3.Test
+ 3.1 python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+ 3.2 python
+   import tensorflow as tf
+   tf.config.list_physical_devices('GPU')
+   tf.test.is_gpu_available()
+
+
+ref - https://www.youtube.com/watch?v=NrJz3ACosJA&t=708s&ab_channel=LearnwithZORO
