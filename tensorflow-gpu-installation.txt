@@ -15,5 +15,5 @@ Tenserflow GPU installation on Windows 11
    tf.config.list_physical_devices('GPU')
    tf.test.is_gpu_available()
 
-
 ref - https://www.youtube.com/watch?v=NrJz3ACosJA&t=708s&ab_channel=LearnwithZORO
+
